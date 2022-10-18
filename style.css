@@ -1,16 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-*{
-   box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-    font-family: "Roboto",sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
+    color: black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 31px;
+    max-width: 1000px;
+    background-color: grey;
+    /*   here max width make sure to make the base container of this element to take only this much pixel space of the totl available viewport and resist from taking more space, this can be benificial since for responsive and fluid layout designs  */
+}
+
+/* for selecting the first heading tag after the body tag */
+body > h1:first-of-type {
+    font-size: 35px;
+    text-align: center;
+}
+
+/* for selecting every element under given tag folding */
+body > main > * {
+    padding: 50px;
+}
+main {
+    background-color: beige;
+}
+
+header {
+    background-color: magenta;
+    /* padding: 50px; */
+}
+nav {
+    background-color: green;
+    /* padding: 50px; */
+}
+
+section {
+    background-color: purple;
+    /* padding: 50px; */
+}
+aside {
+    background-color: yellow;
+    /* padding: 50px; */
+}
+
+footer {
+    /* padding: 50px; */
 }
