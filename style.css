@@ -18,9 +18,9 @@ body > h1:first-of-type {
 }
 
 /* for selecting every element under given tag folding */
-body > main > * {
+/* body > main > * {
     padding: 50px;
-}
+} */
 main {
     background-color: beige;
 }
@@ -31,18 +31,28 @@ header {
 }
 nav {
     background-color: green;
+    float: left;
+    width: 25%;
     /* padding: 50px; */
 }
 
-section {
+main {
     background-color: purple;
+    float: left;
+    width: 50%;
     /* padding: 50px; */
 }
 aside {
     background-color: yellow;
+    /* clear: both; */
     /* padding: 50px; */
 }
 
 footer {
+    background-color: blueviolet;
+    clear: both;
     /* padding: 50px; */
+}
+
+@media screen(max) {
 }
