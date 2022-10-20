@@ -1,59 +1,141 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+    font-family: "Google Sans";
+    src: url("https://fonts.gstatic.com/s/googlesans/v45/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2")
+        format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC,
+        U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
 
 body {
-    margin: 0 auto;
+    margin: 100px auto;
     color: black;
     font-family: monospace;
     font-weight: bold;
     font-size: 31px;
     max-width: 1000px;
-    background-color: grey;
+    background-color: #9ec1a3;
     /*   here max width make sure to make the base container of this element to take only this much pixel space of the totl available viewport and resist from taking more space, this can be benificial since for responsive and fluid layout designs  */
 }
-
-/* for selecting the first heading tag after the body tag */
-body > h1:first-of-type {
-    font-size: 35px;
-    text-align: center;
-}
-
-/* for selecting every element under given tag folding */
-/* body > main > * {
-    padding: 50px;
-} */
 main {
-    background-color: beige;
+    background-color: #e1dee9;
 }
 
 header {
-    background-color: magenta;
-    /* padding: 50px; */
-}
-nav {
-    background-color: green;
-    float: left;
-    width: 25%;
-    /* padding: 50px; */
+    background-color: #a7bbec;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: left;
+    padding: 50px;
 }
 
-main {
-    background-color: purple;
-    float: left;
-    width: 50%;
-    /* padding: 50px; */
+.search-container > input[type="search"] {
+    margin-top: 10px;
+    /*   text-align: center; */
+    width: 92%;
+    /*   border-style: None; */
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: monospace;
+    background-color: none;
+}
+
+input[type="search"]:focus {
+    background-color: #bed8d4;
+}
+
+button.search-btn {
+    margin-top: 5px;
+    /*   margin-left: 15px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/4889/4889297.png");
+    border-radius: 6px;
+    font-size: 10px;
+    align-items: center;
+    border: 0;
+    /*   background-size: cover; */
+    width: 35px;
+    height: 35px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+nav {
+    background-color: #40798c;
+    text-align: center;
+    padding: 50px;
 }
 aside {
-    background-color: yellow;
-    /* clear: both; */
-    /* padding: 50px; */
+    box-sizing: border-box;
+    background-color: #b6a6ca;
+    float: left;
+    width: 25%;
+    padding: 50px;
+}
+
+section {
+    box-sizing: border-box;
+    float: left;
+    width: 75%;
+    /*   clear:both; */
+    background-color: #f45b69;
+    padding: 50px;
+    /*   margin: 50px auto; */
 }
 
 footer {
-    background-color: blueviolet;
     clear: both;
-    /* padding: 50px; */
+    padding: 16px;
+    /*   margin-top: 10px; */
+    background-color: #bed8d4;
 }
+footer > * {
+    /*   padding: 50px 0; */
+    line-height: 20px;
+    background-color: #bed8d4;
+    /*   text-align: center; */
+    /*   padding-left: 10px; */
+}
+.footer-wrapper {
+    margin-top: 10px;
+}
+.text-area {
+    /*   position: absolute; */
+    font-family: "Google Sans";
+    font-size: 75%;
+    text-align: center;
+    /* since we're using float clearing hack on this footer container, so the marggin that we're providing now is getting used as on the lower cascading layer of the viewport and getting appeared as on the previous side of the viewport, better option now can be to use padding itself*/
 
-/* Responsive part goes here */
-/* @media  screen only and (wid) {
-} */
+    /*More illustration: As if there is no padding given  in the parent container already then no margin will gonna work and vice versa !(not tried with borderbox property)*/
+    /*   margin-top: 30px; */
+    /* padding-top: 15px; */
+    /*   z-index: 2; */
+}
+.credits-area {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-family: "Google Sans";
+    font-weight: normal;
+    font-size: 15px;
+    align: center;
+}
+.credit-image-container {
+    /*   float: center; */
+    /*   overflow: hidden; */
+    /*   margin: 0 50px; */
+    /*   margin-top: -5px; */
+    margin: 0 auto;
+    /*   margin-right: auto; */
+
+    width: 140px;
+    height: 30px;
+    /*   z-index: 12; */
+    /*   margin-right: 50px; */
+    background-repeat: no-repeat;
+    /*   align-items: end; */
+}
